@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('assassins-creed-valhalla-logo-4k-kw-1366x768.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+
+
+
+}
+
+.container .thumb{
+    list-style: none ;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.container .thumb li{
+    width: 100px;
+    height: 100px;
+ 
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255, 255,255 ,0.2 )  ;
+    box-shadow:0.15px 25px rgb(0, 0, 0, 0.05) ;
+    border: 1px solid rgba(255, 255,255 ,0.25 );
+    border-top: 1px solid rgba(255, 255,255 ,0.5 );
+    border-left: 1px solid rgba(255, 255,255 ,0.5 );
+    border-radius: 20px;
+    /* backdrop-filter: blur(4px); */
+ }
+
+
+.container .thumb li img
+{ 
+    width: 100%;
+    transition: 0.5s;
+    scale: 1.5;
+}
+.container .thumb li:hover img{
+    transform:scale(1.5)  rotate(-35deg);
+}
+.container .imgbox{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    background-color: yellow;
+    background-color:rgba(255, 255,255 ,0.2 )  ;
+    box-shadow:0.15px 25px rgb(0, 0, 0, 0.05) ;
+    border: 1px solid rgba(255, 255,255 ,0.25 );
+    border-top: 1px solid rgba(255, 255,255 ,0.5 );
+    border-left: 1px solid rgba(255, 255,255 ,0.5 );
+    border-radius: 20px;
+    padding:60px 20px ;
+    padding-left: 50px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.container .imgbox h2{
+    color: #fff;
+    letter-spacing: 1;
+
+}
+.container .imgbox img{
+    width: 100%;
+    transition: 0.25s;
+}
+.container .imgbox img:hover{
+    transform: scale(2) rotate(-15deg) translateX(20px);
+}
+.container .imgbox .size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .imgbox .size span{
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+.container .imgbox .size li{
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: rgb(0, 94, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 4px;
+    font-weight: 700;
+    box-shadow: 0 2px 10px rgb(0, 0, 0 , 1);
+    cursor: pointer;
+    transition: 0.25s;
+}
+.container .size li:hover{
+    transform: translateY(-10px);
+}
+.container .btn{
+    position: absolute;
+    bottom: -30px;
+    background-color: #fff;
+    display: inline-block;
+    text-decoration: none ;
+    padding: 15px 30px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    color:  rgb(0, 94, 245);
+    align-content: center;
+    justify-content: center;
+    transition: 0.25s;
+
+}
+.container .imgbox .btn:hover{
+    letter-spacing: 2px;
+    box-shadow: black 3px 12px 0px;
+}
