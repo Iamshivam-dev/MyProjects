@@ -24,7 +24,7 @@ window.addEventListener('load', ()=>{
             const proxy2 = 'http://gobetween.oklabs.org/'
 
             //Getting the api form OpenWeatherMap by putting the longitude and latitude in the adress along with api id
-            const api = `${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=8722d128142ac877fc347d0a2ea8829b`;
+            const api = `api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=8722d128142ac877fc347d0a2ea8829b`;
 
             //Fetching the API
             fetch(api)
